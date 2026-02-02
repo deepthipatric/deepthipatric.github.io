@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+
 :root {
   --bg: #f8f6f2;
   --ink: #1b1a18;
@@ -23,8 +25,6 @@ body {
     linear-gradient(120deg, #f9f5f1 0%, #f1efe9 100%);
   min-height: 100vh;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
 
 h1,
 h2,
@@ -179,6 +179,23 @@ main {
   border: 1px solid var(--soft);
 }
 
+.profile-card {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  max-height: 320px;
+}
+
+.profile-title {
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .card-top {
   display: flex;
   justify-content: space-between;
@@ -204,6 +221,40 @@ main {
 .section {
   padding: 4rem 0;
   border-top: 1px solid var(--soft);
+}
+
+.timeline {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.role {
+  background: var(--card);
+  padding: 1.75rem;
+  border-radius: 20px;
+  border: 1px solid var(--soft);
+}
+
+.role-title {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.role-title span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.role ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.role li + li {
+  margin-top: 0.4rem;
 }
 
 .section-title {
@@ -266,6 +317,23 @@ main {
   gap: 1.5rem;
 }
 
+.edu-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.edu {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 18px;
+  border: 1px solid var(--soft);
+}
+
+.edu span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .skill {
   background: var(--card);
   padding: 1.5rem;
@@ -291,6 +359,40 @@ main {
   border: 1px solid var(--soft);
   display: grid;
   gap: 0.35rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.skill-tags span {
+  padding: 0.35rem 0.75rem;
+  background: var(--soft);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.pubs {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.pubs article {
+  background: var(--card);
+  border-radius: 18px;
+  border: 1px solid var(--soft);
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.pubs a {
+  color: var(--accent-dark);
+  font-weight: 600;
 }
 
 .contact {
