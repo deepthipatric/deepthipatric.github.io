@@ -216,6 +216,9 @@
               Flood inundation modeling and visualization to support risk
               assessment and planning decisions.
             </p>
+            <button class="thumb-trigger" data-modal="flood-modal" type="button">
+              View project images
+            </button>
             <div class="project-tags">
               <span>GIS</span>
               <span>Hydrology</span>
@@ -301,6 +304,17 @@
         </div>
       </section>
     </main>
+
+    <div class="modal" id="flood-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Flood risk modelling images">
+        <button class="modal-close" type="button" data-close aria-label="Close">×</button>
+        <div class="modal-content">
+          <img src="assets/flood1.jpg" alt="Flood risk model 3D view" />
+          <img src="assets/flood2.webp" alt="Flood risk map visualization" />
+        </div>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <p>© 2026 Deepthi Patric. Built with care.</p>
