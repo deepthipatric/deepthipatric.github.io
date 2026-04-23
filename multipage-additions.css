@@ -1,0 +1,180 @@
+/* ============================================================
+   MULTI-PAGE ADDITIONS
+   Add these rules to your existing styles.css
+   (paste at the very end of the file)
+   ============================================================ */
+
+/* Active nav link */
+.nav a.active {
+  color: var(--accent, #4f8ef7);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent, #4f8ef7);
+  padding-bottom: 2px;
+}
+
+/* Page hero (replaces full hero on inner pages) */
+.page-hero {
+  padding: 4rem 2rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.page-hero h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-bottom: 0.5rem;
+}
+.page-hero p {
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
+
+/* About block */
+.about-block {
+  max-width: 760px;
+}
+.about-block p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Highlight cards (home page) */
+.highlights {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+.highlight-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--border, rgba(255,255,255,0.1));
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.highlight-card:hover {
+  border-color: var(--accent, #4f8ef7);
+  transform: translateY(-3px);
+}
+.highlight-num {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent, #4f8ef7);
+  margin-bottom: 0.4rem;
+}
+.highlight-card p {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin: 0;
+}
+
+/* Education cards (full width on education page) */
+.edu-list--full {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+}
+.edu--card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  border: 1px solid var(--border, rgba(255,255,255,0.1));
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+.edu-badge {
+  background: var(--accent, #4f8ef7);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  padding: 0.4rem 0.75rem;
+  white-space: nowrap;
+  align-self: flex-start;
+  margin-top: 0.2rem;
+}
+.edu-thesis {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Skill groups */
+.skill-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.skill-group-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+/* Full-width project cards */
+.projects-full {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.project--full {
+  border: 1px solid var(--border, rgba(255,255,255,0.1));
+  border-radius: 12px;
+  padding: 2rem;
+}
+.project--full p {
+  margin: 0.75rem 0 1rem;
+  line-height: 1.75;
+  opacity: 0.85;
+}
+
+/* Publication status badges */
+.pub-status {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 0.2rem 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.pub-status--published {
+  background: rgba(72, 199, 142, 0.15);
+  color: #48c78e;
+}
+.pub-status--review {
+  background: rgba(255, 183, 77, 0.15);
+  color: #ffb74d;
+}
+.pub-status--submitted {
+  background: rgba(100, 181, 246, 0.15);
+  color: #64b5f6;
+}
+
+/* References */
+.ref-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.ref-card {
+  border: 1px solid var(--border, rgba(255,255,255,0.1));
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+.ref-card h5 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+.ref-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
